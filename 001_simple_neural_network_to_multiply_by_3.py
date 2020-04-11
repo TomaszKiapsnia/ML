@@ -1,3 +1,11 @@
+'''
+Description:
+Simple neural network with one percepton to do a liear regression. 
+Used example: multiplying by 3 
+Method of optimization (finding parameters for linear function): gradient descent (in each step it adds (or not) learning rate to params)
+'''
+
+
 # returns linear function result 
 def predict(x, params):
     return params['b'] + x*params['w']
@@ -95,4 +103,4 @@ for i in range(epochs):
     
 #exam it!
 for x in x_test:
-    print(str(x) + ' * 3 =' + ' ' + str(predict(x,mod_params)))   
+    print(str(x) + ' * 3 =' + ' ' + str(predict(x,mod_params)))
